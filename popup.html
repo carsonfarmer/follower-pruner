@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Follower Pruner</title>
+  <style>
+    body { width: 310px; padding: 12px; font: 14px system-ui; color: #17232b; }
+    h1 { font-size: 20px; margin: 0 0 8px; }
+    p { line-height: 1.4; }
+    button { padding: 7px 16px; margin: 8px 4px 0 0; cursor: pointer; }
+    details { margin-top: 14px; }
+    #settings label { display: flex; justify-content: space-between; align-items: center; margin: 8px 0; }
+    input[type=number] { width: 75px; }
+    #status { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Follower Pruner</h1>
+  <p>Open your own <strong>Followers</strong> list on X. Any matching rule removes the follower.</p>
+  <form id="form">
+    <label><input id="testMode" type="checkbox" checked> Test mode — preview only</label>
+    <div><label><input id="resume" type="checkbox" checked> Resume saved progress</label></div>
+    <div><button id="start" type="submit">Start test</button><button id="stop" type="button" disabled>Stop</button></div>
+    <details>
+      <summary>Timing and retries</summary>
+      <fieldset id="settings"><legend>Delays in milliseconds</legend></fieldset>
+    </details>
+  </form>
+  <p id="status" role="status">Ready.</p>
+  <script src="core.js"></script>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
