@@ -1,8 +1,13 @@
 # Follower Pruner
 
+[![Regenerative software: inspired](https://img.shields.io/badge/Regenerative_software-inspired-2ea44f)](https://chadfowler.com/regenerative-software/)
+
 A minimal Chrome extension for removing followers from your own X account using
 name, handle, bio, and follower-count rules. Plain JavaScript, no runtime
 dependencies, and a small Start/Stop popup. Test mode is on by default.
+
+[PROMPT.md](PROMPT.md) is a useful initial prompt for recreating this project,
+following [Chad Fowler's regenerative software principles](https://chadfowler.com/regenerative-software/).
 
 ## Install
 
